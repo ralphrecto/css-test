@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 boilerplate – all you really need…</title>
+	<link rel="stylesheet" href="css/style.css">
+  <style type="text/css">
+    .problem {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .button {
+      position: relative;
+      width: 100px;
+      height: 50px;
+      background: green;
+      color: white;
+      margin: 10px;
+    }
+
+    .tooltip {
+      display: none;
+      position: absolute;
+      top: -10px;
+      right: -20px;
+      width: 50px;
+      height: 20px;
+      background: black;
+    }
+
+    .button:hover .tooltip {
+        display: block;
+    }
+
+    ul#prob2 li {
+      float: left;
+      list-style-type: none;
+      margin: 10px;
+    }
+
+    #prob3-bigbox {
+      position: relative;
+      background: black;
+      width: 400px;
+      height: 400px;
+    }
+
+    #prob3-smallbox {
+      position: absolute;
+      top: 50%;
+      margin-top: -100px;
+      background: blue;
+      color: white;
+      width: 200px;
+      height: 200px;
+    }
+
+  </style>
+</head>
+
+<body id="home">
+    <h1>Problem Set 1</h1>
+    <div class="problem">
+      <h3>Problem 1</h3>
+      <p>Complete the following code so that the divs with class .tooltip act like tooltips (set at arbitrary offset from each .button).</p>
+      <div class="button">
+        <div class="tooltip">info</div>
+        button 1</div>
+      <div class="button">
+        <div class="tooltip">info</div>
+        button 2</div>
+      <div class="button">
+        <div class="tooltip">info</div>
+        button 3</div>
+    </div>
+    <div class="problem">
+      <h3>Problem 2</h3>
+      <p>Make all elements of the unordered list below lie on a single line, without the buttons that delineate each line item. Make each li element have 10px margin on each side.</p>
+      <ul id="prob2">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+      </ul>
+    </div>
+    <div class="problem">
+      <h3>Problem 3</h3>
+      <p>Vertically align the blue box within the black box.</p>
+      <div id="prob3-bigbox">
+        <div id="prob3-smallbox">small</div>
+      </div>
+    </div>
+</body>
+
+</html>
