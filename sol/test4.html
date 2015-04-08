@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 boilerplate – all you really need…</title>
+	<link rel="stylesheet" href="css/style.css">
+  <style type="text/css">
+    .problem {
+      position: relative;
+    }
+
+    .box {
+      box-sizing: border-box;
+    }
+
+    #box2, #box3, #box4 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    #box1 {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      background: red;
+      border: none;
+    }
+
+    #box2 {
+      width: 400px;
+      height: 400px;
+      margin: -200px 0 0 -200px;
+      background: green;
+    }
+
+    #box3 {
+      width: 300px;
+      height: 300px;
+      margin: -150px 0 0 -150px;
+      background: blue;
+    }
+
+    #box4 {
+      width: 200px;
+      height: 200px;
+      margin: -100px 0 0 -100px;
+      background: gray;
+      line-height: 200px;
+      text-align: center;
+    }
+
+    #box1:hover, #box1:hover * {
+      border: 10px solid #000;
+    }
+
+    #box2:hover, #box2:hover * {
+      border: 10px dashed #000;
+    }
+
+    #box3:hover, #box3:hover * {
+      border: 10px dotted #000;
+    }
+
+    #box4:hover, #box4:hover * {
+      border: 10px double #000;
+    }
+
+    #prob2list {
+      width: 100px;
+      color: white;
+    }
+
+    #prob2list li {
+      background: red;
+    }
+
+    #prob2list li #prob2list li {
+      background: green;
+    }
+
+    #prob2list li #prob2list li #prob2list li {
+      background: blue;
+    }
+
+  </style>
+</head>
+
+<body id="home">
+    <h1>Problem Set 4</h1>
+    <div class="problem">
+      <h3>Problem 1</h3>
+      <p>Think about nesting for this problem. For a list of border styles, see <a href="http://www.w3schools.com/cssref/pr_border-style.asp">http://www.w3schools.com/cssref/pr_border-style.asp</a>.
+      <div id="box1" class="box">
+        <div id="box2" class="box">
+          <div id="box3" class="box">
+            <div id="box4" class="box">
+              boop
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="problem">
+      <h3>Problem 2</h3>
+      <ul id="prob2list">
+        <li>boop</li>
+        <li>
+          <ul id="prob2list">
+            <li>boop</li>
+              <li>
+                <ul id="prob2list">
+                  <li>boop</li>
+                </ul>
+              </li>
+            <li>boop</li>
+              <li>
+                <ul id="prob2list">
+                  <li>boop</li>
+                </ul>
+              </li>
+            <li>boop</li>
+              <li>
+                <ul id="prob2list">
+                  <li>boop</li>
+                </ul>
+              </li>
+          </ul>
+        </li>
+        <li>boop</li>
+        <li>
+          <ul id="prob2list">
+            <li>boop</li>
+              <li>
+                <ul id="prob2list">
+                  <li>boop</li>
+                </ul>
+              </li>
+            <li>boop</li>
+              <li>
+                <ul id="prob2list">
+                  <li>boop</li>
+                </ul>
+              </li>
+            <li>boop</li>
+              <li>
+                <ul id="prob2list">
+                  <li>boop</li>
+                </ul>
+              </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+</body>
+
+</html>
